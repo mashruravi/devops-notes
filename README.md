@@ -5,6 +5,6 @@
 
 ## Operating Systems Concepts
 
-- Startup Management (initd)
+- [Startup Management (initd)](initd/)
 - Service Management (systemd)
 - Sockets
