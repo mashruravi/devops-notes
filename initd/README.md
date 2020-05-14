@@ -121,6 +121,40 @@ esac
 
 
 
+To add your own init scripts, create one with the structure above and follow these steps:
+
+* Put the script in the `/etc/init.d` directory
+* Create links in the rc* directories using one of these methods
+  * Using `chkconfig`
+  * Using `update-rc.d`
+  * Manually
+
+
+
+### chkconfig
+
+`sudo chkconfig` - see all services managed by `chkconfig` and which run levels they are auto-started on.
+
+`sudo chkconfig --list ntpd` - get details of only the service called `ntpd`.
+
+`sudo chkconfig ntpd on` - enable auto-start on default run levels (from LSB stanza in init script)
+
+`sudo chkconfig ntpd off` - disable auto-start.
+
+`sudo chkconfig --level 3 ntpd on` - enable auto-start only at run level 3 (ignore LSB stanza metadata).
+
+`sudo chkconfig --level 3 ntpd off` - disable auto-start only at run level 3.
+
+
+
+### update-rc.d
+
+`service --status-all` - list status of all services.
+
+`sudo update-rc.d ntp defaults` - enable at default run levels.
+
+`sudo update-rc.d -f ntp remove` - remove at default run levels.
+
 
 
 
