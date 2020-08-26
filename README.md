@@ -1,9 +1,14 @@
-# DevOps Notes
-*Notes made while following roadmap at https://roadmap.sh/devops.*
+# Full-stack Notes
+*Notes made while following roadmaps at https://roadmap.sh.*
 
 
+## Frontend
 
-## Operating Systems Concepts
+## Backend
+
+## DevOps
+
+### Operating Systems Concepts
 
 - [Startup Management (initd)](initd/)
 - Service Management (systemd)
